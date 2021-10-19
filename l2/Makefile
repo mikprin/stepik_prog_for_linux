@@ -1,10 +1,10 @@
 all: bin
 
 bin: main.c lib
-	gcc solution.c -fPIC -L. -lsolution -o hello
+	gcc solution.c -fPIC -L. -lsolution -o solution
 
 lib: solution.h solution.c
-	gcc -shared hello.c -fPIC -o libHello.so
+	gcc -shared solution.c -fPIC -o libsolution.so
 
 clean:
 	-rm hello libsolution.so 2>/dev/null
