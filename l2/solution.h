@@ -1,9 +1,9 @@
-#include <string.h>
-#include <stdio.h>
-#include <stddef.h>
+#ifndef __SOLUTION__
+#define __SOLUTION__
 
-int stringStat(const char *string, size_t multiplier, int *count){
-    int str_lenth_modified = multiplier * strlen(*string);  // Return to function
-    *count ++;
-    return str_lenth_modified;
-}
+#include <stddef.h>
+#include <stdio.h>
+
+int stringStat(const char *string, size_t multiplier, int *count);
+
+#endif
