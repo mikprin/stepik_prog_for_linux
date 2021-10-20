@@ -9,3 +9,4 @@ lib: solution.h solution.c
 clean:
 	-rm hello libsolution.so 2>/dev/null
 	-rm *.o 2>/dev/null
+	-rm solution 2>/dev/null
